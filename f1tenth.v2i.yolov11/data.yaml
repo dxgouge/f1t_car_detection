@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['car']
+
+roboflow:
+  workspace: apple-in897
+  project: f1tenth-1fq0l
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/apple-in897/f1tenth-1fq0l/dataset/2
