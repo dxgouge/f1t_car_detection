@@ -29,14 +29,14 @@ def train_model(yaml_path):
         data=yaml_path,
         epochs=30,  # Number of training epochs
         imgsz=640,  # Image size for detection
-        batch=8,    # Batch size
-        device='mps',  # Use GPU for faster training - Change to "cuda" on windows/lin, "mps" for mac - "cpu" if ur gpu blows
+        batch=4,    # Batch size
+        device='cpu',  # Use GPU for faster training - Change to "cuda" on windows/lin, "mps" for mac - "cpu" if ur gpu blows
         project=os.path.join(os.getcwd(), 'f1t_yolo_training'),
         name='f1t_car_detection',
         val=True,   # Enable validation
         patience=10,  # Early stopping patience
         save_period=10,  # Save checkpoint every 10 epochs
-        workers=4,   # Reduced workers for stability
+        workers=2,   # Reduced workers for stability
         # Data augmentation for robustness
         hsv_h=0.015,  # Hue variation
         hsv_s=0.7,    # Saturation variation
