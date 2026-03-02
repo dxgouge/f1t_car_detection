@@ -37,7 +37,7 @@ def train_model(yaml_path):
         patience=10,  # Early stopping patience
         save_period=10,  # Save checkpoint every 10 epochs
         workers=2,   # Reduced workers for stability
-        # Data augmentation for robustness
+        # Data augmentation foqr robustness
         hsv_h=0.015,  # Hue variation
         hsv_s=0.7,    # Saturation variation
         hsv_v=0.4,    # Value/brightness variation
