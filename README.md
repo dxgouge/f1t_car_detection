@@ -20,4 +20,4 @@ The model is trained on the F1TENTH dataset, which features images of small-scal
 f1tenth.v2i.yolov11 directory.
 
 # Make sure to select an appropriate amount of workers for your hardware and which device to use (CPU/GPU) . Batch size 4 with 2 workers on cpu (Makes for painfully slow processing) should be more than fine on most systems. Increas as necessary 
-# Devices: "cuda" (windows/linux nvidia), "cpu", "mps" (macOS)
+# Popular Devices: "cuda" (windows/linux nvidia), "cpu", "mps" (macOS)
